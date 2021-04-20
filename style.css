@@ -108,14 +108,12 @@ table tr td:last-child {
   font-size: 18px;
 }
 
-.footer-thanks svg {
+.footer-thanks img {
   display: inline-block;
   position: relative;
-  top: 2px;
+  top: 1px;
+  width: 16px;
   margin-right: 4px;
-}
-.footer-thanks svg path {
-  fill: #fb7578;
 }
 
 .footer-info {
