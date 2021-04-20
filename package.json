@@ -1,0 +1,29 @@
+{
+  "name": "html-pdf-invoice-template",
+  "version": "1.0.0",
+  "description": "```sh python -m SimpleHTTPServer 8080 ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anvilco/html-pdf-invoice-template.git"
+  },
+  "keywords": [
+    "pdf",
+    "html",
+    "api",
+    "invoice",
+    "template"
+  ],
+  "author": "Anvil Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anvilco/html-pdf-invoice-template/issues"
+  },
+  "homepage": "https://github.com/anvilco/html-pdf-invoice-template#readme",
+  "dependencies": {
+    "@anvilco/anvil": "^2.8.1"
+  }
+}
