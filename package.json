@@ -1,7 +1,7 @@
 {
   "name": "html-pdf-invoice-template",
   "version": "1.0.0",
-  "description": "```sh python -m SimpleHTTPServer 8080 ```",
+  "description": "An HTML invoice template for use in a browser and with HTML to PDF generation.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
