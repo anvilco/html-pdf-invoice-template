@@ -6,7 +6,7 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 table {
@@ -31,7 +31,7 @@ table tr td:last-child {
 }
 
 .large {
-  font-size: 28px;
+  font-size: 1.75em;
 }
 
 .total {
@@ -43,18 +43,21 @@ table tr td:last-child {
   margin: 20px 0 70px 0;
 }
 
+.invoice-info-container {
+  font-size: 0.875em;
+}
 .invoice-info-container td {
   padding: 4px 0;
 }
 
 .client-name {
-  font-size: 24px;
+  font-size: 1.5em;
   vertical-align: top;
 }
 
 .line-items-container {
   margin: 70px 0;
-  font-size: 16px;
+  font-size: 0.875em;
 }
 
 .line-items-container th {
@@ -62,7 +65,7 @@ table tr td:last-child {
   color: #999;
   border-bottom: 2px solid #ddd;
   padding: 10px 0 15px 0;
-  font-size: 12px;
+  font-size: 0.75em;
   text-transform: uppercase;
 }
 
@@ -96,7 +99,7 @@ table tr td:last-child {
 
 .payment-info {
   width: 38%;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 1.5;
 }
 
@@ -105,7 +108,7 @@ table tr td:last-child {
 }
 
 .footer-thanks {
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .footer-thanks img {
@@ -119,7 +122,7 @@ table tr td:last-child {
 .footer-info {
   float: right;
   margin-top: 8px;
-  font-size: 12px;
+  font-size: 0.75em;
   color: #ccc;
 }
 
