@@ -79,6 +79,10 @@ table tr td:last-child {
   border-bottom: 2px solid #ddd;
 }
 
+.line-items-container.has-bottom-border {
+  margin-bottom: 0;
+}
+
 .line-items-container th.heading-quantity {
   width: 50px;
 }
@@ -114,7 +118,7 @@ table tr td:last-child {
 
 .footer-info {
   float: right;
-  margin-top: 8px;
+  margin-top: 5px;
   font-size: 0.75em;
   color: #ccc;
 }
@@ -126,4 +130,8 @@ table tr td:last-child {
 
 .footer-info span:last-child {
   padding-right: 0;
+}
+
+.page-container {
+  display: none;
 }
