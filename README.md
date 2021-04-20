@@ -24,7 +24,7 @@ View and edit files in this repo to change the output PDF to suit your needs:
 
 * [invoice.html](https://github.com/anvilco/html-pdf-invoice-template/blob/main/invoice.html) - the invoice's HTML
 * [invoice.css](https://github.com/anvilco/html-pdf-invoice-template/blob/main/invoice.css) - the invoice's CSS
-* [invoice-pdf.css](https://github.com/anvilco/html-pdf-invoice-template/blob/main/invoice.css) - the invoice's PDF-specific CSS
+* [invoice-pdf.css](https://github.com/anvilco/html-pdf-invoice-template/blob/main/invoice-pdf.css) - the invoice's PDF-specific CSS
 
 The script simply reads the HTML and CSS from this repo, then generates a PDF.
 
