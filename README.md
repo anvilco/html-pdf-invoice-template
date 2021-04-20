@@ -14,7 +14,7 @@ And rendered as a PDF via the HTML to PDF API:
 
 ## Rendering as a PDF
 
-There is an [example node script](/anvilco/html-pdf-invoice-template/blob/main/generate-pdf.js) in this repo you can use to generate the PDF. First [sign up](https://app.useanvil.com/signup) for Anvil, get your [API key](https://www.useanvil.com/docs/api/getting-started#api-key), then run the following command at the root of this repo
+There is an [example node script](https://github.com/anvilco/html-pdf-invoice-template/blob/main/generate-pdf.js) in this repo you can use to generate the PDF. First [sign up](https://app.useanvil.com/signup) for Anvil, get your [API key](https://www.useanvil.com/docs/api/getting-started#api-key), then run the following command at the root of this repo
 
 ```sh
 $ ANVIL_API_TOKEN=<YOURKEY> node ./generate-pdf.js && open ./generate.output.pdf
@@ -22,9 +22,9 @@ $ ANVIL_API_TOKEN=<YOURKEY> node ./generate-pdf.js && open ./generate.output.pdf
 
 View and edit files in this repo to change the output PDF to suit your needs:
 
-* [invoice.html](/anvilco/html-pdf-invoice-template/blob/main/invoice.html) - the invoice's HTML
-* [invoice.css](/anvilco/html-pdf-invoice-template/blob/main/invoice.css) - the invoice's CSS
-* [invoice-pdf.css](/anvilco/html-pdf-invoice-template/blob/main/invoice.css) - the invoice's PDF-specific CSS
+* [invoice.html](https://github.com/anvilco/html-pdf-invoice-template/blob/main/invoice.html) - the invoice's HTML
+* [invoice.css](https://github.com/anvilco/html-pdf-invoice-template/blob/main/invoice.css) - the invoice's CSS
+* [invoice-pdf.css](https://github.com/anvilco/html-pdf-invoice-template/blob/main/invoice.css) - the invoice's PDF-specific CSS
 
 The script simply reads the HTML and CSS from this repo, then generates a PDF.
 
@@ -57,7 +57,7 @@ python -m SimpleHTTPServer 8080
 
 Visit http://localhost:8080
 
-See [index.html](/anvilco/html-pdf-invoice-template/blob/main/index.html) for more information
+See [index.html](https://github.com/anvilco/html-pdf-invoice-template/blob/main/index.html) for more information
 
 ## License
 
