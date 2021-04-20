@@ -1,3 +1,8 @@
+/*
+  Common invoice styles. These styles will work in a browser or using the HTML
+  to PDF anvil endpoint.
+*/
+
 body {
   font-size: 16px;
 }

@@ -1,3 +1,8 @@
+// Generate a PDF from the HTML code in this repo.
+//
+// Usage:
+// ANVIL_API_TOKEN=<YOURKEY> node ./generate-pdf.js && open ./generate.output.pdf
+
 const fs = require('fs')
 const path = require('path')
 const Anvil = require('@anvilco/anvil')
@@ -6,7 +11,8 @@ const apiKey = process.env.ANVIL_API_TOKEN
 
 function buildHTMLToPDFPayload () {
   const html = fs.readFileSync('./invoice.html').toString()
-  const css = fs.readFileSync('./invoice.css').toString() +
+  const css =
+    fs.readFileSync('./invoice.css').toString() +
     fs.readFileSync('./invoice-pdf.css').toString()
   return {
     type: 'html',
