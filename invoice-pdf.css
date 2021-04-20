@@ -16,6 +16,7 @@
 }
 
 .page-container {
+  display: block;
   position: running(pageContainer);
   margin-top: -25px;
   font-size: 12px;
