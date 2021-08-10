@@ -4,22 +4,26 @@
 // ANVIL_API_TOKEN=<YOURKEY> node ./generate-pdf.js && open ./generate-react.output.pdf
 // ANVIL_API_TOKEN=gi5bFQRzJ6h7Hp3pphsYbF3QtXNm3Vb9 node ./react-pdf/generate-pdf.js && open ./generate-react.output.pdf
 
-import React from 'react'
-import ReactDOMServer from 'react-dom/server'
-import Invoice from './components/Invoice'
-
 import fs from 'fs'
 import path from 'path'
 import Anvil from '@anvilco/anvil'
 
+import React from 'react'
+import ReactDOMServer from 'react-dom/server'
+import { ServerStyleSheet } from 'styled-components'
+
+import Invoice from './components/Invoice'
+
 const apiKey = process.env.ANVIL_API_TOKEN
 
 function buildHTMLToPDFPayload () {
-  const css = ''
-  console.log(ReactDOMServer)
+  const sheet = new ServerStyleSheet()
   const html = ReactDOMServer.renderToStaticMarkup(
-    <Invoice />
+    sheet.collectStyles(
+      <Invoice />
+    )
   )
+  const css = sheet.instance.toString()
   return {
     type: 'html',
     title: 'HTML Invoice',
