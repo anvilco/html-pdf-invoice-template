@@ -14,17 +14,21 @@ And rendered as a PDF via the HTML to PDF API:
 
 ## Rendering as a PDF
 
-There is an [example node script](https://github.com/anvilco/html-pdf-invoice-template/blob/main/generate-pdf.js) in this repo you can use to generate the PDF. First [sign up](https://app.useanvil.com/signup) for Anvil, get your [API key](https://www.useanvil.com/docs/api/getting-started#api-key), then run the following command at the root of this repo
+You can render the invoice with vanilla HTML and CSS or with React and styled-components. For use with React, see the [react-pdf](./react-pdf/README.md) directory.
+
+First [sign up](https://app.useanvil.com/signup) for Anvil and get your [API key](https://www.useanvil.com/docs/api/getting-started#api-key).
+
+There is an [example node script](./generate-pdf.js) you can use to generate the PDF from vanilla HTML and CSS. Run the following command at the root of this repo
 
 ```sh
 $ ANVIL_API_TOKEN=<YOURKEY> node ./generate-pdf.js && open ./generate.output.pdf
 ```
 
-View and edit files in this repo to change the output PDF to suit your needs:
+Vanilla HTML and CSS for the invoice template is in the root of this repo. Feel free to view and edit these files to change the output PDF:
 
-* [invoice.html](https://github.com/anvilco/html-pdf-invoice-template/blob/main/invoice.html) - the invoice's HTML
-* [invoice.css](https://github.com/anvilco/html-pdf-invoice-template/blob/main/invoice.css) - the invoice's CSS
-* [invoice-pdf.css](https://github.com/anvilco/html-pdf-invoice-template/blob/main/invoice-pdf.css) - the invoice's PDF-specific CSS
+* [invoice.html](./invoice.html) - the invoice's HTML
+* [invoice.css](./invoice.css) - the invoice's CSS
+* [invoice-pdf.css](./invoice-pdf.css) - the invoice's PDF-specific CSS
 
 The script simply reads the HTML and CSS from this repo, then generates a PDF.
 
