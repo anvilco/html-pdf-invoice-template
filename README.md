@@ -18,13 +18,13 @@ You can render the invoice with vanilla HTML and CSS or with React and styled-co
 
 First [sign up](https://app.useanvil.com/signup) for Anvil and get your [API key](https://www.useanvil.com/docs/api/getting-started#api-key).
 
-Vanilla HTML and CSS for the invoice template is in the root of this repo. There is an [example node script](./generate-pdf.js) you can use to generate the PDF from vanilla HTML and CSS.  then run the following command at the root of this repo
+There is an [example node script](./generate-pdf.js) you can use to generate the PDF from vanilla HTML and CSS.  then run the following command at the root of this repo
 
 ```sh
 $ ANVIL_API_TOKEN=<YOURKEY> node ./generate-pdf.js && open ./generate.output.pdf
 ```
 
-View and edit files in this repo to change the output PDF to suit your needs:
+Vanilla HTML and CSS for the invoice template is in the root of this repo. Feel free to view and edit these files to change the output PDF:
 
 * [invoice.html](./invoice.html) - the invoice's HTML
 * [invoice.css](./invoice.css) - the invoice's CSS
