@@ -39,7 +39,6 @@ function buildHTMLToPDFPayload () {
 
 async function main () {
   const client = new Anvil({
-    baseURL: 'http://localhost:3000',
     apiKey,
   })
 
