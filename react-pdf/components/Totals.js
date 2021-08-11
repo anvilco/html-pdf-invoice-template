@@ -44,7 +44,11 @@ const Totals = ({
         </div>
       </PaymentInfo>
       <td><Large>{dueDate}</Large></td>
-      <Total><Large>{total}</Large></Total>
+      <Total>
+        <Large>
+          <strong>{total}</strong>
+        </Large>
+      </Total>
     </tr>
   </InvoiceTable>
 )
