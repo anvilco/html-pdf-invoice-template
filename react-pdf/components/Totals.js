@@ -25,6 +25,7 @@ const Totals = ({
   total,
 }) => (
   <InvoiceTable
+    hasBottomBorder
     headings={(
       <>
         <th>Payment Info</th>

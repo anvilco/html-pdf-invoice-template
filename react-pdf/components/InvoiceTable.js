@@ -51,9 +51,10 @@ const InvoiceTableContainer = styled.table`
 
 const InvoiceTable = ({
   headings,
-  children
+  children,
+  hasBottomBorder,
 }) => (
-  <InvoiceTableContainer>
+  <InvoiceTableContainer hasBottomBorder={hasBottomBorder}>
     <thead>
       <tr>
         {headings}
