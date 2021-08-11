@@ -1,8 +1,7 @@
-// Generate a PDF from the HTML code in this repo.
+ // Generate a PDF from the HTML code in this repo.
 //
 // Usage:
-// ANVIL_API_TOKEN=<YOURKEY> node ./generate-pdf.js && open ./generate-react.output.pdf
-// ANVIL_API_TOKEN=gi5bFQRzJ6h7Hp3pphsYbF3QtXNm3Vb9 node ./react-pdf/generate-pdf.js && open ./generate-react.output.pdf
+// ANVIL_API_TOKEN=your_token yarn react:generate-pdf && open ./generate-react.output.pdf
 
 import fs from 'fs'
 import path from 'path'
@@ -40,6 +39,7 @@ function buildHTMLToPDFPayload () {
 
 async function main () {
   const client = new Anvil({
+    baseURL: 'http://localhost:3000',
     apiKey,
   })
 
