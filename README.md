@@ -2,7 +2,7 @@
 
 This repo contains an HTML invoice template you can customize to fit your business needs.
 
-The template is meant to be used either in a browser, or rendered as a PDF with Anvil's [HTML to PDF API](https://www.useanvil.com/docs/api/generate-pdf#html--css-to-pdf).
+The template is meant to be used either in a browser, or rendered as a PDF with Anvil's [HTML to PDF API](https://www.useanvil.com/docs/api/generate-pdf#html--css-to-pdf). Learn more using Anvil to fill, generate, and sign PDFs on our [developer page](https://www.useanvil.com/developers/).
 
 Here it is rendered in a browser:
 
@@ -62,6 +62,17 @@ python -m SimpleHTTPServer 8080
 Visit http://localhost:8080
 
 See [index.html](https://github.com/anvilco/html-pdf-invoice-template/blob/main/index.html) for more information
+
+## Template provided by Anvil
+
+This repo is provided by [Anvil](https://www.useanvil.com/developers/). Anvil provides easy APIs for all things paperwork.
+
+1. [PDF filling API](https://www.useanvil.com/products/pdf-filling-api/) - fill out a PDF template with a web request and structured JSON data.
+2. [PDF generation API](https://www.useanvil.com/products/pdf-generation-api/) - send markdown or HTML and Anvil will render it to a PDF.
+3. [Etch e-sign with API](https://www.useanvil.com/products/etch/) - customizable, embeddable, e-signature platform with an API to control the signing process end-to-end.
+4. [Anvil Workflows (w/ API)](https://www.useanvil.com/products/workflows/) - Webforms + PDF + e-sign with a powerful no-code builder. Easily collect structured data, generate PDFs, and request signatures.
+
+Learn more on our [Anvil developer page](https://www.useanvil.com/developers/). See the [API guide](https://www.useanvil.com/docs) and the [GraphQL reference](https://www.useanvil.com/docs/api/graphql/reference/) for full documentation.
 
 ## License
 
