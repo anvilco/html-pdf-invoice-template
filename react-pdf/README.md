@@ -1,6 +1,6 @@
 # React to PDF Invoice
 
-This example uses React and styled-components to generate an invoice PDF. You can use this as a jumping off point to generate a PDF with your own custom React / styled-components code.
+This example uses React and styled-components to generate an invoice PDF via Anvil's [HTML to PDF API](https://www.useanvil.com/docs/api/generate-pdf#html--css-to-pdf). You can use this as a jumping off point to generate a PDF with your own custom React / styled-components code via.
 
 To run it, `yarn install` at the root of this repo, then run:
 
