@@ -5,7 +5,7 @@ This example uses React and styled-components to generate an invoice PDF via Anv
 To run it, `yarn install` at the root of this repo, then run:
 
 ```sh
-ANVIL_API_TOKEN=your_token yarn react:generate-pdf && open ./generate-react.output.pdf
+ANVIL_API_TOKEN=your_token yarn generate-pdf:react && open ./generate-react.output.pdf
 ```
 
 See the [generate-pdf.js](./generate-pdf.js) script, and `components` directory here for the code.

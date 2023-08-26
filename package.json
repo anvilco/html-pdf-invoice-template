@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "react:generate-pdf": "yarn babel-node ./react-pdf/generate-pdf.js"
+    "generate-pdf:plain-html": "yarn babel-node ./generate-pdf.js",
+    "generate-pdf:react": "yarn babel-node ./react-pdf/generate-pdf.js"
   },
   "repository": {
     "type": "git",
