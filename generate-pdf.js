@@ -5,7 +5,7 @@
 
 const fs = require('fs')
 const path = require('path')
-const Anvil = require('@anvilco/anvil')
+const Anvil = require('@anvilco/anvil').default
 
 const apiKey = process.env.ANVIL_API_TOKEN
 
