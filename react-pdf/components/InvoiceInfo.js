@@ -34,7 +34,6 @@ const InvoiceInfo = ({
       </td>
     </tr>
     <tr>
-      <td></td>
       <td>
         {addressStreet}
       </td>
