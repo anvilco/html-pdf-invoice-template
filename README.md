@@ -14,14 +14,14 @@ And rendered as a PDF via the HTML to PDF API:
 
 ## Rendering as a PDF
 
-You can render the invoice with vanilla HTML and CSS or with React and styled-components. For use with React, see the [react-pdf](./react-pdf/README.md) directory.
+You can render the invoice with plain HTML and CSS or with React and styled-components. For use with React, see the [react-pdf](./react-pdf/README.md) directory.
 
 First [sign up](https://app.useanvil.com/signup) for Anvil and get your [API key](https://www.useanvil.com/docs/api/getting-started#api-key).
 
-There is an [example node script](./generate-pdf.js) you can use to generate the PDF from vanilla HTML and CSS. Run the following command at the root of this repo
+There is an [example node script](./generate-pdf.js) you can use to generate the PDF from plain HTML and CSS. Run the following command at the root of this repo
 
 ```sh
-$ ANVIL_API_TOKEN=<YOURKEY> node ./generate-pdf.js && open ./generate.output.pdf
+$ ANVIL_API_TOKEN=<YOURKEY> node ./generate-pdf.js && open ./generate-plain-html.output.pdf
 ```
 
 Vanilla HTML and CSS for the invoice template is in the root of this repo. Feel free to view and edit these files to change the output PDF:
@@ -49,6 +49,16 @@ function buildHTMLToPDFPayload () {
 }
 const exampleData = buildHTMLToPDFPayload()
 const { statusCode, data, errors } = await client.generatePDF(exampleData)
+```
+
+## Rendering as a PDF with React
+
+See the [react-pdf](./react-pdf/README.md) directory for full details on using React to generate an invoice PDF.
+
+The tl;dr to generate a PDF with React is to `yarn install` at the root of this repo, then run:
+
+```sh
+ANVIL_API_TOKEN=your_token yarn generate-pdf:react && open ./generate-react.output.pdf
 ```
 
 ## Running in a browser

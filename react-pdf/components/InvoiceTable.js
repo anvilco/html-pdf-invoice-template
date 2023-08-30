@@ -28,14 +28,14 @@ const InvoiceTableContainer = styled.table`
     padding-top: 25px;
   }
 
-  ${({hasBottomBorder}) => hasBottomBorder && `
+  &.has-bottom-border {
     margin-bottom: 0;
 
     tbody tr:last-child td {
       padding-bottom: 25px;
       border-bottom: 2px solid #ddd;
     }
-  `}
+  }
 
   th.heading-quantity {
     width: 50px;
@@ -54,7 +54,7 @@ const InvoiceTable = ({
   children,
   hasBottomBorder,
 }) => (
-  <InvoiceTableContainer hasBottomBorder={hasBottomBorder}>
+  <InvoiceTableContainer className={hasBottomBorder ? 'has-bottom-border' : ''}>
     <thead>
       <tr>
         {headings}

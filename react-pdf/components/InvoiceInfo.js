@@ -26,7 +26,7 @@ const InvoiceInfo = ({
 }) => (
   <InvoiceInfoContainer>
     <tr>
-      <ClientName rowspan="2">
+      <ClientName rowSpan="2">
         {clientName}
       </ClientName>
       <td>
@@ -34,7 +34,6 @@ const InvoiceInfo = ({
       </td>
     </tr>
     <tr>
-      <td></td>
       <td>
         {addressStreet}
       </td>
